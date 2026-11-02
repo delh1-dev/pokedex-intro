@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import styles from "./components/PokemonCard.module.css";
 
 import PokemonCard from "./components/PokemonCard";
 
@@ -41,6 +42,7 @@ function App() {
       <nav>
         {pokemonList.map((pokemon) => (
           <button
+            className={styles.button}
             key={pokemon.name}
             type="button"
             onClick={() => setPokemonName(pokemon.name)}

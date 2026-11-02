@@ -1,12 +1,18 @@
+import styles from "./PokemonCard.module.css";
+
 type PokemonCardProps = {
   pokemon: { name: string; imgSrc?: string };
 };
 
 function PokemonCard({ pokemon }: PokemonCardProps) {
   return (
-    <figure>
+    <figure className={styles.pokemonCard}>
       {pokemon.imgSrc !== undefined ? (
-        <img src={pokemon.imgSrc} alt={pokemon.name} />
+        <img
+          className={styles.PokemoCard}
+          src={pokemon.imgSrc}
+          alt={pokemon.name}
+        />
       ) : (
         <p>???</p>
       )}
