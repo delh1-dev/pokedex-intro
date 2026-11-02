@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import styles from "./components/PokemonCard.module.css";
-
 import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar";
 
 const pokemonList = [
   {
@@ -33,24 +33,13 @@ const pokemonList = [
 function App() {
   const [pokemonName, setPokemonName] = useState("bulbasaur");
   const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
-  if (pokemon === undefined) {
-    throw new Error("Ivalid pokemon name");
+  if (pokemon == undefined) {
+    throw new Error("Invalid pokemon name");
   }
   return (
     <div>
       <PokemonCard pokemon={pokemon} />
-      <nav>
-        {pokemonList.map((pokemon) => (
-          <button
-            className={styles.button}
-            key={pokemon.name}
-            type="button"
-            onClick={() => setPokemonName(pokemon.name)}
-          >
-            {pokemon.name}
-          </button>
-        ))}
-      </nav>
+      <NavBar pokemonList={pokemonList} setPokemonName={setPokemonName} />
     </div>
   );
 }

@@ -28,6 +28,13 @@ Chaque étape a été développée sur sa propre branche Git (component-1, compo
 - importer fichier avec styles. PokemonCard.tsx et dans App.tsx
 - remplacer les className per styles..
 
+# Étapes 9
+
+- crée le composant NavBar.
+- Déplace les boutons dans NavBar
+- Utilise les props
+- Supprime les boutons de App
+
 # Difficultés rencontrées
 
 la mise à jour du state est asynchrone. Juste après avoir appelé la fonction de mise à jour, la valeur lue était encore l'ancienne, ce qui donnait un affichage qui n'était pas à jour.
