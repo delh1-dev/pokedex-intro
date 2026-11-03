@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import styles from "./components/PokemonCard.module.css";
 import PokemonCard from "./components/PokemonCard";
@@ -32,6 +32,9 @@ const pokemonList = [
 
 function App() {
   const [pokemonName, setPokemonName] = useState("bulbasaur");
+  useEffect(() => {
+    alert("hello pokemon trainer:)");
+  }, []);
   const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
   if (pokemon == undefined) {
     throw new Error("Invalid pokemon name");

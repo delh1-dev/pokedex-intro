@@ -35,12 +35,28 @@ Chaque étape a été développée sur sa propre branche Git (component-1, compo
 - Utilise les props
 - Supprime les boutons de App
 
+# # Étapes 10
+
+- utiliser le hook useEffect pour message "hello pokemon trainer"
+- détecte lorsque le Pokémon sélectionné devient "pikachu"
+- alerte avec le message "pika pikachu !!!" sans hook useEffect
+
 # Difficultés rencontrées
 
 la mise à jour du state est asynchrone. Juste après avoir appelé la fonction de mise à jour, la valeur lue était encore l'ancienne, ce qui donnait un affichage qui n'était pas à jour.
+placer correctement les parenthèses, les crochets et les accolades.....
 
 étape 7
-placer correctement les parenthèses, les crochets et les accolades
+placer correctement les parenthèses, les crochets et les accolades.....
 
 étape 8
+placer correctement les parenthèses, les crochets et les accolades.....
 j'ai eu du mal avec la syntaxe des className et des imports
+
+étape 9
+utiliser les props pour transmettre les données entre App et NavBar
+placer correctement les parenthèses, les crochets et les accolades
+
+étape 10
+la logique du onClick avec la condition pour Pikachu
+placer correctement les parenthèses, les crochets et les accolades......

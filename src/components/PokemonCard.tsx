@@ -8,11 +8,7 @@ function PokemonCard({ pokemon }: PokemonCardProps) {
   return (
     <figure className={styles.pokemonCard}>
       {pokemon.imgSrc !== undefined ? (
-        <img
-          className={styles.PokemoCard}
-          src={pokemon.imgSrc}
-          alt={pokemon.name}
-        />
+        <img className={styles.image} src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
         <p>???</p>
       )}
